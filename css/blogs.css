@@ -194,9 +194,73 @@ nav .profile-link a:hover {
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg-footer);
-   
+
 }
 
 .footer-container .footer-bottom span {
     color: white;
+}
+
+/* //////////////////////////////////////MEDIAS QUERIES/////////////////////7 */
+
+
+@media (max-width: 900px) {
+
+    nav .nav-logo-container img {
+        width: 200px;
+    }
+
+    .hero-container {
+        grid-template: 100% / 100%;
+    }
+
+    .hero-container .hero-text {
+        padding: 30px 50px;
+    }
+
+    .blogs-container {
+        grid-template: 50% 50% / repeat(2, auto);
+        padding: 30px 50px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    nav {
+        grid-template-columns: repeat(2, 187px);
+        justify-items: center;
+        align-items: center;
+    }
+
+    nav .nav-logo-container {
+        margin-left: 0;
+    }
+
+    nav .nav-logo-container img {
+        width: 150px;
+    }
+
+
+    .hero-container {
+        padding: 20px;
+    }
+
+
+    .hero-container .hero-img {
+        width: 100%;
+    }
+
+    .hero-container .hero-img img {
+        width: 100%;
+    }
+
+    .hero-container .hero-text {
+        padding: 20px;
+    }
+
+    .blogs-container {
+        grid-template: 100% / 100%;
+        padding: 30px 50px;
+    }
 }
