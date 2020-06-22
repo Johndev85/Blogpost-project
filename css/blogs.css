@@ -50,7 +50,9 @@ header .icons span {
 
 nav {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   grid-template: 100% / 50% 50%;
+   justify-items: center;
+   align-items: center;
    height: 90px;
 }
 
@@ -83,30 +85,36 @@ nav .profile-link a:hover {
 
 .hero-container {
     display: grid;
-    grid-template: 100% / 60% 40%;
+    grid-template: 100% / 70% 30%;
     justify-items: center;
     align-items: center;
-    background-color: #aeaeae;
-    padding: 40px;
+    background-color: #e6e9ed;
+    padding: 0 40px 30px 0;
+}
 
+.hero-container .hero-img span {
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
 }
 
 .hero-container .hero-img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.hero-container .hero-img span {
+.hero-container .hero-img h2 {
     margin: 15px;
 }
 
 .hero-container .hero-img img {
-    width: 40rem;
+    width: 85%;
 }
 
 .hero-container .hero-text {
-    padding: 30px 50px;
+    padding: 30px 0;
 }
 
 .hero-container .hero-text .hero-text-link {
@@ -129,8 +137,9 @@ nav .profile-link a:hover {
 .mid-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
-    margin: 0 40px;
+    padding: 30px 30px 0px 30px;
+    max-width: 980px;
+    margin: auto;
     font-weight: 500;
     font-size: 22px;
     border-bottom: 2px solid var(--color-shadow-btn);
@@ -142,7 +151,9 @@ nav .profile-link a:hover {
 .blogs-container {
     display: grid;
     grid-template: 50% 50% / repeat(3, auto);
-    margin: 30px 0;
+    grid-gap: 30px;
+    max-width: 980px;
+    margin: auto;
 }
 
 .blogs-container .blog-item {
@@ -151,7 +162,7 @@ nav .profile-link a:hover {
 }
 
 .blogs-container .blog-item img {
-    width: 350px;
+    width: 100%;
 }
 
 .blogs-container .blog-item .blog-item-text p {
