@@ -86,18 +86,14 @@ nav .profile-link a:hover {
 
 /* -----------------------------------------------------HERO ------------- */
 
-.main-container .hero-container {
-    display: flex;
-    justify-content: center;
+.hero-container {
+    width: 980px;
+    height: 500px;
 }
 
-.main-container .hero-container .hero-img {
-    width: 980px;
-    height: 350px;
-    background-image: url(/assets/post-img/img5.jpg);
-    background-repeat: no-repeat;
-    background-position-y: -90px;
-    background-size: 750px;
+.hero-container img {
+   width: 100%;
+   height: 100%;
 }
 
 
