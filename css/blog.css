@@ -15,6 +15,8 @@ body {
     box-sizing: border-box;
 }
 
+/* -----------------------------------------------------HERO-CONTAINER------------- */
+
 a {
     text-decoration: none;
     display: inline;   /* display horizontal */
@@ -82,106 +84,95 @@ nav .profile-link a:hover {
     box-shadow: 0 0 6px 2px var(--color-bg-btn);
 }
 
-/* -----------------------------------HERO-CONTAINER------------- */
+/* -----------------------------------------------------HERO ------------- */
 
-.hero-container {
-    display: grid;
-    grid-template: 100% / 70% 30%;
-    justify-items: center;
-    align-items: center;
-    background-color: var(--color-bg-conter);
-    padding: 0 40px 30px 0;
-}
-
-.hero-container .hero-img span {
+.main-container .hero-container {
     display: flex;
-    justify-content: flex-start;
-    width: 85%;
+    justify-content: center;
 }
 
-.hero-container .hero-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.main-container .hero-container .hero-img {
+    width: 980px;
+    height: 350px;
+    background-image: url(/assets/post-img/img5.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -90px;
+    background-size: 750px;
 }
 
-.hero-container .hero-img h2 {
-    margin: 15px;
-}
-
-.hero-container .hero-img img {
-    width: 85%;
-}
-
-.hero-container .hero-text {
-    padding: 30px 0;
-}
-
-.hero-container .hero-text .hero-text-link {
-    margin-top: 40px;
-}
-
-.hero-container .hero-text .hero-text-link a {
-    padding: 10px 15px;
-    border: 1px solid var(--color-bg-btn);
-}
-
-.hero-container .hero-text .hero-text-link a:hover {
-    box-shadow: 0 0 5px 2px var(--color-bg-btn);
-    font-weight: 700;
-}
 
 /* -----------------------------------------------------MID-CONTAINER------------- */
 
-
-.mid-container {
-    display: flex;
-    justify-content: center;
-    padding: 30px 30px 0px 30px;
-    max-width: 980px;
-    margin: auto;
+.main-container .mid-container {
     font-weight: 500;
     font-size: 22px;
     border-bottom: 2px solid var(--color-shadow-btn);
 }
 
-/* -----------------------------------------------------BLOGS-CONTAINER------------- */
+.main-container .mid-container h3 {
+    text-align: left;
+}
 
+/* -----------------------------------------------------MAIN CONTAINER------------- */
 
-.blogs-container {
-    display: grid;
-    grid-template: 50% 50% / repeat(3, auto);
-    grid-gap: 30px;
+.main-container {
+    display: flex;
+    flex-direction: column;
     max-width: 980px;
-    margin: auto;
+    margin: auto
 }
 
-.blogs-container .blog-item {
+.main-container .main-blog {
+    padding: 20px;
+    text-align: justify;
+}
+
+.main-container .main-blog h1 {
+    font-size: 30px;
+
+}
+
+/* -----------------------------------------------------CONTACT SECTION------------- */
+
+.contact-container {
+    padding: 0 80px;
+    display: grid;
+    grid-template: 2fr / 50% 50%;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--color-bg-conter);
+}
+
+.contact-container .contact-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-container .contact-icon .contact-img {
+    width: auto;
     height: auto;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.blogs-container .blog-item img {
-    width: 100%;
+.contact-container .contact-icon .contact-img img {
+    width: 60px;
+    height: 60px;
+
 }
 
-.blogs-container .blog-item .blog-item-text p {
-    margin: 16px 0 25px 0px;
+.contact-container .contact-icon .contact-text {
+    padding: 30px 30px 50px 30px;
 }
 
-.blogs-container .blog-item .blog-item-text a {
-    padding: 10px 15px;
-    border: 1px solid var(--color-bg-btn);
-}
-
-.blogs-container .blog-item .blog-item-text a:hover {
-    box-shadow: 0 0 5px 2px var(--color-bg-btn);
-    font-weight: 700;
+.contact-container .contact-icon .contact-text a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 /* -----------------------------------------------------FOOTER------------- */
-
 
 .footer-container {
     padding-top: 50px;
@@ -194,7 +185,7 @@ nav .profile-link a:hover {
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg-footer);
-   
+
 }
 
 .footer-container .footer-bottom span {
