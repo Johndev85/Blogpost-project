@@ -1,4 +1,4 @@
-# Blogpost-project
+# Blogposts-project
 
 Layout basic blog with HTML, CSS.
 
